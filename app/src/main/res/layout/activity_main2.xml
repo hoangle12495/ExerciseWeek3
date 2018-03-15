@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ngocdiem.exercise3.Main2Activity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+
+            <ImageView
+                android:id="@+id/imgMovie"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@android:drawable/ic_delete" />
+
+            <ImageButton
+                android:id="@+id/imgPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_above="@+id/txtMovieName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="73dp"
+                app:srcCompat="@drawable/play_icon" />
+
+            <TextView
+                android:id="@+id/txtMovieName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgMovie"
+                android:layout_centerHorizontal="true"
+                android:text="TextView"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txtRealeaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMovieName"
+                android:layout_centerHorizontal="true"
+                android:text="TextView"
+                android:textSize="20sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtRealeaseDate"
+                android:layout_centerHorizontal="true"
+                android:isIndicator="true" />
+
+            <TextView
+                android:id="@+id/txtSumarize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/ratingBar"
+                android:text="TextView"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
